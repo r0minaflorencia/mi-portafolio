@@ -123,3 +123,83 @@ section {
     background-color: grey;
     border-radius: 3px;
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .carousel-wpf {
+        height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .carousel-wpf {
+        height: 250px;
+        max-width: 100%;
+    }
+    
+    .carousel {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+3. Usando viewport units (más moderno)
+css.carousel-wpf {
+    width: 100%;
+    max-width: 890px;
+    height: 60vh; /* 60% de la altura de la pantalla */
+    min-height: 300px;
+    max-height: 600px;
+}
+
+.carousel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+4. Solución completa responsiva
+css.carousel-wpf {
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 0 20px; /* Espacios laterales en móvil */
+}
+
+.carousel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .carousel img {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel img {
+        max-height: 350px;
+    }
+    
+    .carousel-wpf {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel img {
+        max-height: 250px;
+    }
+    
+    .carousel-wpf {
+        padding: 0 10px;
+    }
+}
