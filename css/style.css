@@ -103,3 +103,23 @@ section {
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
+.carousel-wpf {
+    width: 890px;
+    height: 600px;
+}
+
+.carousel {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.carousel-control-prev-icon {
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.carousel-control-next-icon {
+    background-color: grey;
+    border-radius: 3px;
+}
