@@ -78,7 +78,7 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Inicializar el efecto cuando la página carga
+// Inicializar el efecto de máquina de escribir cuando la página carga
 window.addEventListener('load', function () {
     const heroTitle = document.querySelector('#typewriter-text');
     if (heroTitle) {
@@ -87,3 +87,17 @@ window.addEventListener('load', function () {
         }, 500);
     }
 });
+
+function handleEmailClick(event) {
+    // Detectar si es dispositivo móvil
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (!isMobile) {
+        // En escritorio, mostrar alternativas
+        event.preventDefault();
+        alert('Para contactarme puedes:\n• Copiar mi email: florencia.rominav@gmail.com\n• O usar tu cliente de correo preferido');
+        
+        // Opcionalmente copiar email al portapapeles
+        navigator.clipboard.writeText('florencia.rominav@gmail.com');
+    }
+}
