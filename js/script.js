@@ -95,9 +95,7 @@ function handleEmailClick(event) {
     if (!isMobile) {
         // En escritorio, mostrar alternativas
         event.preventDefault();
-        alert('Para contactarme puedes:\n• Copiar mi email: florencia.rominav@gmail.com\n• O usar tu cliente de correo preferido');
+        alert('Para contactarme podés escribirme a:\n• florencia.rominav@gmail.com');
         
-        // Opcionalmente copiar email al portapapeles
-        navigator.clipboard.writeText('florencia.rominav@gmail.com');
     }
 }
