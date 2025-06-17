@@ -27,24 +27,17 @@ html {
 /* Estilo de secciones */
 section {
     padding: 60px 0;
-    scroll-margin-top: 70px;
+    scroll-margin-top: 45px;
 }
 
 .about-me_img {
     width: 350px;
-    /* Ancho deseado de la imagen */
     height: 450px;
-    /* Altura (igual al ancho para un círculo perfecto) */
     border-radius: 50%;
-    /* ¡Esto es lo que la hace redonda! */
     object-fit: cover;
-    /* Clave para que la imagen no se estire ni se deforme */
     object-position: center;
-    /* Asegura que la imagen esté centrada dentro del círculo */
     border: 5px solid #ffffff;
-    /* Opcional: un borde blanco elegante */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    /* Opcional: una sombra sutil para darle profundidad */
 }
 
 /* Ajustes para la foto en pantallas pequeñas */
