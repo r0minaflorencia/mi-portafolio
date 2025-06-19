@@ -9,7 +9,7 @@
     font-weight: auto;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100,
+        "width" 100,
         "GRAD" 0;
 }
 
@@ -22,6 +22,11 @@ body {
 /* Scroll suave */
 html {
     scroll-behavior: smooth;
+}
+
+.logo {
+    width: 65px;
+    height: auto; 
 }
 
 /* Estilo de secciones */
